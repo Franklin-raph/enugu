@@ -1,0 +1,128 @@
+<div
+  style="
+    height: 15.3cm;
+    width: 24cm;
+    margin: auto;
+    padding: 2rem;
+    border: 10px solid #025d18;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
+      url({{DOMAIN}}/coat_of_arm.png);
+    background-position: center;
+    background-size: 60%;
+    background-repeat: no-repeat;
+  "
+>
+  <div style="display: flex; align-items: flex-start; justify-content: space-between; margin-top: -12px">
+    <img width="80px" src="{{DOMAIN}}/enugu_map.png" alt="" />
+    <h1
+      style="
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 20px;
+        color: #025d18;
+        margin-top: 0 0;
+      "
+    >
+      <span style="color: black">Enugu State Government</span>
+      <span style="font-size: 20px"><br />Internal Revenue Service <br />Revenue Receipt</span>
+    </h1>
+    <div style="display: flex; flex-direction: column">
+      <img width="70px" src="{{DOMAIN}}/eirslogo1.png" alt="" />
+      <!-- <img width="70px" src="{{DOMAIN}}/{{COYLOGO}}" alt="" /> -->
+    </div>
+  </div>
+  <div style="display: flex; justify-content: space-between; font-size: 15px; margin-top: 24px">
+    <div style="display: flex; gap: 20px;">
+      <div>
+        <p style="margin: 7px 0">Taxpayer's Name:</p>
+        <p style="margin: 7px 0">Taxpayer's Address:</p>
+        <p style="margin: 7px 0">Payment Date:</p>
+        <p style="margin: 7px 0">Issue Date:</p>
+        <p style="margin: 7px 0">Revenue Name:</p>
+        <p style="margin: 7px 0">Revenue Code:</p>
+        <p style="margin: 7px 0">{{Property_BillNo}}:</p>
+        <p style="margin: 7px 0">Payment For:</p>
+        <p style="margin: 7px 0">Min. Dept. & Agencies(MDA):</p>
+        <p style="margin: 7px 0">Amount in Words:</p>
+        <p style="margin: 7px 0">Amount Paid:</p>
+      </div>
+      <div>
+        <p style="margin: 7px 0; font-weight: bold">{{Taxpayer}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{Address}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{PymtDate}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{issueDate}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{RevenueName}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{RevenueCode}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{Bill_No_or_Property}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{PaymentFor}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{MDA}}</p>
+        <p style="margin: 7px 0; font-weight: bold">{{AmtInWords}}</p>
+        <p style="margin: 7px 0; border: 1px dotted black; padding: 2px 8px; font-size: 1.3rem; font-weight: bold">?{{AmtPaid}}</p>
+      </div>
+    </div>
+
+    <div style="text-align: right">
+      <br />
+      <br />
+      <br />
+      <br />
+      <p style="text-align: end; margin: 0">Receipt No: <span style="font-weight: bold">{{ReceiptNo}}</span></p>
+      <h3 style="padding: 0; text-align: right; font-size: 14px; margin: 0">
+        {{PaymentRef}} <br />
+      </h3>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 40px; margin: 0 0; text-align: center; justify-content: space-between">
+    <div>
+      <img src="{{Photo}}" width="100px" alt="">
+    </div>
+    <div style="display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+    text-align: center;
+    margin-left: 0rem;">
+
+      <img src="{{DOMAIN}}/{{Signature}}" width="35%"  alt="" />
+      <p style="margin: 0; border-bottom: 2px solid black; width: 150px"></p>
+      <p style="margin: 0">{{SignatoryName}}</p>
+      <p style="margin: 0">{{SignatoryPortfolio}}</p>
+    </div>
+    <div>
+      <td style="text-align: end; margin: 0;width: 30%;">{{qrcode}}</td>
+      <p style="margin: 0;">Scan to Verify</p>
+      <div
+        style="
+          width: 100%;
+          display: flex;
+          margin-top: 0rem;
+          align-items: flex-end;
+          flex-direction: column;
+          justify-content: flex-end;
+        "
+      >
+        <!-- <td width="30%" src={{qrcode}} style="text-align: right" alt="" /> -->
+        <!-- <td style="text-align: right;width: 30%;">{{qrcode}}</td>
+        <p style="margin: 0;">Scan to Verify</p> -->
+      </div>
+
+    </div>
+  </div>
+
+  <div style="display: flex; align-items: flex-end; justify-content: space-between; font-size: 14px; margin-top: -8px">
+    <div>
+      <div style="display: flex; gap: 10px; font-weight: bold">
+        <p style="margin: 0">Contact phone no:</p>
+        <p style="margin: 0">08075625555</p>
+      </div>
+      <p style="margin: 0;font-size: 10px">Norlics Limited. All rights reserved</p>
+     </div>
+    <div>
+      <p style="margin: 7px 0 5px; font-size: 10px">Printed on {{timestamp}}</p>
+      <p style="margin: 0;font-size: 10px"><b>Posted by:</b> {{Bank}}</p>
+    </div>
+  </div>
+</div>
