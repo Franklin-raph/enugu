@@ -1,0 +1,198 @@
+<div
+  style="
+    height: 8.3in;
+    width: 11.7in;
+    margin: auto;
+    padding: 1rem;
+    border: 1px solid red;
+    background-image: url(https://enunustategovernment.netlify.app/WhatsApp%20Image%202023-11-20%20at%2020.28.22_304c9907.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 70%;
+  "
+>
+  <div style="display: flex; align-items: center; justify-content: space-between">
+    <div style="display: flex; align-items: center; gap: 20px">
+      <img src="https://enunustategovernment.netlify.app/ENSG Logo.png" width="7%" alt="" />
+      <div style="font-family: Arial, Helvetica, sans-serif">
+        <h1 style="color: green; margin: 0; font-size: 25px">ENUGU STATE GOVERNMENT</h1>
+        <h3 style="margin: 0; font-weight: bold">ENUGU STATE MINISTRY OF COMMERCE AND INDUSTRY</h3>
+        <p style="font-size: 14px; margin: 0">Block A1, Ground Floor, RM 7, New Secretariat Complex, Enugu</p>
+      </div>
+    </div>
+    <!-- <img src="https://enunustategovernment.netlify.app/WhatsApp Image 2023-11-20 at 20.28.23_f698f56b.jpg" width="10%" alt=""> -->
+  </div>
+  <h2 style="padding: 5px; text-align: center; color: green; background-color: rgb(209, 209, 209); margin: 5px 0">
+    DEMAND NOTICE - {{year}}
+  </h2>
+  <div
+    style="
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 3rem;
+      margin-right: 5rem;
+      font-size: 14px;
+    "
+  >
+    <div style="display: flex; align-items: center; gap: 10px">
+      <!-- <h3>PLEASE PAY WITHIN 7 DAYS TO AVOID ENFORCEMENT AND PENALTY</h3> -->
+    </div>
+    <div style="display: flex; align-items: center; gap: 1rem; font-size: 15px">
+      <div>
+        <h3 style="margin: 0; color: green">BILL NUMBER:</h3>
+        <h3 style="margin: 0; font-weight: bold">ESBN:</h3>
+        <h3 style="margin: 0">PID:</h3>
+        <h3 style="margin: 0">BILLING YEAR:</h3>
+        <h3 style="margin: 0">DATE:</h3>
+      </div>
+      <div>
+        <h3 style="margin: 0; color: green">{{billNo}}</h3>
+        <h3 style="margin: 0">{{myESBN}}</h3>
+        <h3 style="margin: 0">{{PID}}</h3>
+        <h3 style="margin: 0">{{year}}</h3>
+        <h3 style="margin: 0">{{today}}</h3>
+      </div>
+    </div>
+  </div>
+  <div style="display: flex; align-items: flex-start; gap: 2rem; margin-top: 1rem">
+    <div style="width: 35%">
+      <div style="border: 1px solid green; padding: 5px">
+        <p style="margin: 0">Billed To:</p>
+        <h3 style="margin: 0; font-size: 14px">{{taxpayerName}}</h3>
+        <p style="margin: 0; padding-top: 5px">Address:</p>
+        <h3 style="margin: 0; font-size: 14px">{{billerAddr}}</h3>
+        <div style="display: flex; justify-content: space-between; margin-top: 5px">
+          <div>
+            <p style="margin: 0">Phone No.:</p>
+            <h3 style="margin: 0; font-size: 14px">{{billerPhone}}</h3>
+          </div>
+          <div>
+            <p style="margin: 0">Email.:</p>
+            <h3 style="margin: 0; font-size: 14px">{{billerEmail}}</h3>
+          </div>
+          <div></div>
+        </div>
+      </div>
+      <div
+        style="
+          border: 1px solid green;
+          padding: 5px;
+          display: flex;
+          align-items: flex-start;
+          justify-content: space-between;
+          margin-top: 5px;
+        "
+      >
+        <div>
+          <p style="margin: 0; padding-bottom: 5px">Type of Premises:</p>
+          <p style="margin: 0">Hotels and Restaurants</p>
+        </div>
+        <div>
+          <p style="margin: 0; padding-bottom: 5px">Category:</p>
+          <p style="margin: 0">Commercial Properties</p>
+        </div>
+        <div>
+          <p style="margin: 0; padding-bottom: 5px">Nature of Business/ Residence:</p>
+          <p style="margin: 0"></p>
+        </div>
+      </div>
+    </div>
+    <div style="width: 65%">
+      <table style="border-collapse: collapse; width: 100%">
+        <tr style="text-align: center; border: 1px solid black; color: white; background-color: gray">
+          <th style="padding: 5px">S/N</th>
+          <th>Revenue Category</th>
+          <th>Revenue Profile</th>
+          <th>Amount ( N )</th>
+        </tr>
+        <tr style="border: 1px solid black;">
+          <td style="border: 1px solid black; padding: 5px 10px;">{{sn1}}</td>
+          <td style="border: 1px solid black; padding: 5px 10px; font-size: 14px;">{{bill1}}</td>
+          <td style="border: 1px solid black; padding: 5px 10px;">{{revProfile1}}</td>
+          <td style="border: 1px solid black; padding: 5px 10px;text-align: right;">{{billAmt1}}</td>
+      </tr>
+      <tr style="border: 1px solid black;">
+          <td style="border: 1px solid black; padding: 5px 10px;">{{sn2}}</td>
+          <td style="border: 1px solid black; padding: 5px 10px; font-size: 14px;">{{bill2}}</td>
+          <td style="border: 1px solid black; padding: 5px 10px;">{{revProfile2}}</td>
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: right;">{{billAmt2}}</td>
+      </tr>
+      </table>
+      <table style="border-collapse: collapse; width: 100%; font-weight: bold; text-align: end">
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: center">Outstanding</td>
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: right">{{billOutstand}}</td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: center">Discount</td>
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: right">{{billDiscount}}</td>
+        </tr>
+        <tr style="border: 1px solid black">
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: center">Total Due</td>
+          <td style="border: 1px solid black; padding: 5px 10px; text-align: right">{{grandTot}}</td>
+        </tr>
+      </table>
+      <p style="margin: 0; padding-top: 10px; font-weight: bold; text-align: center">
+        Total Amount In Words: {{AmountWords}}
+      </p>
+    </div>
+  </div>
+
+  <div style="display: flex; justify-content: flex-start; align-items: flex-start; margin-top: 1rem">
+    <div style="width: 70px; margin-left: 15px; margin-top: 30px; padding-top: 5px;">
+      {{qrcode}}
+    </div>
+    <div style="width: 40%; margin: 0 1rem">
+      <h3 style="margin: 0; font-size: 15px">HOW TO PAY:</h3>
+      <p style="font-size: 14px">
+        Indicate the revenue you want to pay forand present the Bill Number on the top right corner of this document. 
+        Pay the total amount. Get e-payment print out from the bank and present at Ministry of Commerce and 
+        Industry headquarters for your revenue receipt.
+      </p>
+      <p style="font-size: 14px">
+        Contact Information: You can call the following numbers for enquiries: 08037046888, 08030982424, 08111605718
+        <!-- Or Email: <a style="color: black;" href="mailto:info@irs.en.gov.ng">info@irs.en.gov.ng</a> Or Visit: <a style="color: black;" href="https://www.irs.en.gov.ng">www.irs.en.gov.ng</a> -->
+      </p>
+    </div>
+    <div style="width: 40%">
+      <div style="display: flex; align-items: flex-start">
+        <h3 style="margin: 0; color: red; font-size: 14px">PLEASE NOTE:</h3>
+        <p style="margin: 0; font-size: 14px">Tariff plan can be seen displayed in all Ministry of Commerce and Industry offices or visit irs.en.gov.ng</p>
+        <!-- <p style="margin: 0; font-size: 14px;">Tariff plan can be seen displayed in all ESWAMA offices OR please visit irs.en.gov.ng</p> -->
+      </div>
+      <p style="border: 1px dashed red; padding: 5px; font-size: 12px">
+        In Line with CAP 134, Laws of Enugu State of Nigeria 2004 and ROBP Regulation Gazette of 2014, you are hereby requested to
+        pay the sum mentioned above. Failure to pay within 7 days from date of service of this notice shall lead to enforcement, 
+        court prosecution and/or other legal action.
+      </p>
+      <div style="text-align: end; margin-top: 1rem">
+        <img src="{{imgDOMAIN}}/{{sign}}" width="100px" alt="">
+        <p style="margin: 0;">{{signatory}}</p>
+        <p style="margin: 0;">{{signPortfolio}}</p>
+      </div>
+    </div>
+  </div>
+  <div
+    style="
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 2rem;
+      border-top: 1px solid black;
+      padding-top: 5px;
+      margin-top: 8px;
+    "
+  >
+    <p style="margin: 0; font-size: 12px">
+      <!-- Generated via: www.irs.en.gov.ng on December 4, 2023 at 05:54:10 AM by Admin Housing. Created By:chiomaejim. To Verify the -->
+      Generated via: www.irs.en.gov.ng on {{timestamp}}. To Verify the authencity of this document
+      visit:https://irs.en.gov.ng and enter the bill number. Verify at no cost
+    </p>
+    <img
+      src="https://enunustategovernment.netlify.app/WhatsApp Image 2023-11-20 at 20.28.23_c0f4fe22.jpg"
+      width="25%"
+      alt=""
+    />
+  </div>
+</div>

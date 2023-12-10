@@ -1,0 +1,110 @@
+
+    <div style="width: 14.8cm;
+        height: 21.9cm;
+        margin:0 auto;
+        background-image:  url('https://enunustategovernment.netlify.app/chart%201%20a4@4x.png'); 
+        background-position-x: center; 
+        background-position-y: 0; 
+        background-repeat: no-repeat; 
+        background-size: 100%;
+        /* border: 9px solid green; */
+        padding: 1px 1rem 10px 1rem;">
+                <!-- https://enunustategovernment.netlify.app/chart%201%20a4@4x.png -->
+        <div style="background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)), url('https://norlics-images.netlify.app/coat-of-arm.jfif'); 
+                    background-position-x: center;
+                    background-position-y: 58%;
+                    background-size: 60%;
+                    background-repeat: no-repeat;">
+            <div style="display: flex; align-items: center; justify-content: center; margin-top: 20px;">
+                <!-- <img src="https://enunustategovernment.netlify.app/ENSG Logo.png" width="40px" alt="" />
+                <img width="50px" src="https://test.norlics.ng/eirslogo1.png" alt="" /> -->
+                <img src="https://enunustategovernment.netlify.app/WhatsApp%20Image%202023-11-20%20at%2020.28.23_c0f4fe22.jpg" style="width: 60%;">
+            </div>
+            <p style="margin-left: 10px;">Certificate <span style="font-weight: 600; margin-left: 5px;">{{certno}}</span></p>
+            <p style="text-align: center; font-size: 18px; font-weight: 600; border: 3px solid green; margin: 0 10px; padding: 6px 15px;">INCOME TAX CLEARANCE CERTIFICATE</p>
+            <div>
+                <div style="display: flex; padding: 0 15px; margin-bottom: -8px; ">
+                    <div style="width: 40%;">
+                        <p style="margin-bottom: 3px; text-align: left; font-size: 13px;">This is to certify that</p>
+                        <img src="{{photo}}" width="120px" height="120px" style="object-fit: cover;">
+                    </div>
+                    <div style="width: 100%; margin-top: 18px; ">
+                        <p style="margin-bottom: -10px; font-size: 14px">TAX PAYER NAME: <span style="font-weight: bold;">{{taxpayerName}}</span> </p>
+                        <p style="margin-bottom: -10px; font-size: 14px">GENDER: <span style="font-weight: bold;">{{gender}}</span> </p>
+                        <P style="margin-bottom: -10px; font-size: 14px">ENUGU STATE SOCIAL BENEFIT NUMBER: <span style="font-weight: bold;">{{esbn}}</span> </P>
+                        <p style="margin-bottom: -10px; font-size: 14px">ADDRESS: <span style="font-weight: bold;">{{address}}</span> </p>
+                    </div>
+                </div>
+            </div>
+            <p style="margin-bottom: 10px; padding: 0 6px; font-size: 14px; margin-left: 7px;">Has settled his/her income tax assessments for the past years (i.e {{year0}}, {{year1}} & {{year2}}).</p>
+            <p style="margin-bottom: 4px; padding: 0 2px; font-size: 14px; margin-left: 7px;">Details of his/her assessments are as follows</p>
+            <table border="1" style="border-collapse: collapse; width: 97%; margin: 0 10px;">
+                <thead>
+                    <tr>
+                        <th>YEAR</th>
+                        <th>{{year0}}</th>
+                        <th>{{year1}}</th>
+                        <th>{{year2}}</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Total Income:</td>
+                        <td>&#8358;{{totIncome0}}</td>
+                        <td>&#8358;{{totIncome1}}</td>
+                        <td>&#8358;{{totIncome2}}</td>
+                    </tr>
+                    <tr>
+                        <td>Total Chargeable Income:</td>
+                        <td>&#8358;{{totTaxable0}}</td>
+                        <td>&#8358;{{totTaxable1}}</td>
+                        <td>&#8358;{{totTaxable2}}</td>
+                    </tr>
+                    <tr>
+                        <td>Tax paid:</td>
+                        <td>&#8358;{{totPaid0}}</td>
+                        <td>&#8358;{{totPaid1}}</td>
+                        <td>&#8358;{{totPaid2}}</td>
+                    </tr>
+                    <tr>
+                        <td>Tax Receipt No:</td>
+                        <td>{{receiptNo0}}</td>
+                        <td>{{receiptNo1}}</td>
+                        <td>{{receiptNo2}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date of issuance:</td>
+                        <td>{{issuanceDate0}}</td>
+                        <td>{{issuanceDate1}}</td>
+                        <td>{{issuanceDate2}}</td>
+                    </tr>
+                    <tr>
+                        <td>Date of payment:</td>
+                        <td>{{pymtDate0}}</td>
+                        <td>{{pymtDate1}}</td>
+                        <td>{{pymtDate2}}</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+            <p style="margin-top: 5px; margin-bottom: 0px; font-size: 14px; margin-left: 10px;">SOURCES OF INCOME: <span style="font-weight: 600;">{{IncomeSource}}</span></p>
+            <p style="font-weight: 600; font-size: 14px; margin: 4px 0 4px 10px;">{{yearCur}}: <span style="font-weight: normal;">Total Income: &#8358;{{totIncomeCur}} | Chargeable Income: &#8358;{{totTaxableCur}} | TaxPaid: &#8358;{{totPaidCur}}</span></p>
+            <p style="margin: 0 0 0 10px;">Tax Receipt No(s): {{receiptNoCur}} | Date(s) of Issuance: {{issuanceDateCur}}</p>
+            <div style="display: flex; justify-content: space-between; padding: 0 12px;">
+                <div style="width: 32%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                    <img src="https://usersignatures.netlify.app/MagretEze.png" style="width: 100px; margin-left: 5px;" alt="">
+                    <p style="border-top: 2px solid green; padding-top: 10px; text-align: center; margin: 0; font-size: 14px;">AUTHORISED SIGNATORY</p>
+                    <h1 style="font-size: 15px; text-align: center; margin: 10px 0 0;">{{duedate}}</h1>
+                    <p style=" margin: 0; text-align: center; font-size: 14px;">CERTIFICATE EXPIRY</p>
+                </div>
+                <div style="display: flex; flex-direction: column; align-items: center; width: 32%; margin-top: 0; background-position: center; background-repeat: no-repeat; background:linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url(https://enunustategovernment.netlify.app/ENSG%20Logo.png); background-size: 100%;">
+                    <img src="https://usersignatures.netlify.app/tccchairman.png" style="width: 100%;" alt="">
+                    <p style="border-top: 2px solid green; padding-top: 10px; text-align: center; width: 160px; margin: 0; font-size: 14px;">CHAIRMAN</p>
+                    <P style=" margin: 10px 0 0; text-align: center;font-size: 10px;">Generated on <span style="font-weight: 600; text-decoration: underline;font-size: 10px;">{{timestamp}}</span></P>
+                </div>
+            </div>
+            <p style="font-size: 12px; padding: 0 12px; color: red;">ANY ALTERATIONS RENDERS THIS DOCUMENT INVALID</p>
+            <P style="font-size: 12px; margin-top: -10px; padding: 0 12px;">To verify the authencity of this document, visit <span style="font-weight: 600;">https://www.irs.en.gov.ng</span> and Enter the ETCC for electronic verification at no cost</P>
+        </div>
+    </div>
+    </div>
